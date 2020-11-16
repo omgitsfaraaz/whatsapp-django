@@ -4,7 +4,7 @@
     <div class="container my-3">
         <h1>Please enter Mobile number and Message.</h1>
         <hr>
-        <form action="SendData" action="POST">
+        <form action="SendData" method="POST">
             {% csrf_token %}
             <div class="form-group mt-4">
                 <label for="Phone">Enter Mobile Number</label>
@@ -16,7 +16,7 @@
                 <textarea name="Message" id="Message" rows="5" class="form-control" required placeholder="Enter your message here..."></textarea>
             </div>
             <input type="Submit" value="Send" class="btn btn-primary btn-lg">
-            <a href="/" class="btn btn-secondary btn-lg ml-5">Clear</a>
+            <a href="/" class="btn btn-secondary btn-lg ml-5">Clear</a>{{msg}}
         </form>
     </div>
 {% endblock body %}
