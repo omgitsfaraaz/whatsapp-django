@@ -10,7 +10,7 @@ def whatsApp(Ph, Message):
     import pyautogui as pg
     Phone = "+91"+Ph
     web.open('https://web.whatsapp.com/send?phone='+Phone+'&text='+Message)
-    time.sleep(5)
+    time.sleep(9)
     pg.press('enter')
 
 def SendData(request):
